@@ -4,6 +4,8 @@
   "description": "Biblioteca do curso de JS com TDD.",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/henriquehsilva/js-tdd-course/issues"
   },
-  "homepage": "https://github.com/henriquehsilva/js-tdd-course#readme"
+  "homepage": "https://github.com/henriquehsilva/js-tdd-course#readme",
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-plugin-react": "^7.29.4",
+    "husky": "^7.0.4"
+  }
 }
